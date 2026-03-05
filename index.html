@@ -11,7 +11,19 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo">TİMPA<span>LTD</span></div>
+<a href="#" class="logo-link">
+            <img src="logo.jpg" alt="Timpa Logo" class="site-logo">
+        </a>   
+        
+        <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+        
+        
+        
+        
         <ul class="nav-links">
             <li><a href="#">Anasayfa</a></li>
             <li><a href="#urunler">Ürünlerimiz</a></li>
@@ -77,6 +89,30 @@
             </div>
         </div>
     </section>
+    <section class="why-us">
+        <div class="section-header">
+            <h2>Neden Bizi Seçmelisiniz?</h2>
+            <p>Üretimden teslimata kadar kaliteden ödün vermiyoruz.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon">🛡️</div>
+                <h3>%100 Hijyenik Üretim</h3>
+                <p>El değmeden, tam steril ortamlarda, uluslararası standartlarda üretim yapıyoruz.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">⚡</div>
+                <h3>Hızlı Teslimat</h3>
+                <p>Güçlü stok yapımız sayesinde siparişlerinizi bekletmeden hızla kargoluyoruz.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">💎</div>
+                <h3>Üreticiden Tüketiciye</h3>
+                <p>Aracı firmalar olmadan, doğrudan fabrikadan en uygun fiyat garantisi sunuyoruz.</p>
+            </div>
+        </div>
+    </section>
 <section id="iletisim-form" style="padding: 80px 8%; background: #fff; text-align: center;">
     <h2>Hızlı Teklif Alın</h2>
     <form style="max-width: 500px; margin: 40px auto; display: flex; flex-direction: column; gap: 15px;">
@@ -86,13 +122,48 @@
         <button type="submit" class="btn primary" style="border: none; cursor: pointer;">Gönder</button>
     </form>
 </section>
-    <footer id="iletisim">
-        <div class="footer-content">
-            <h3>TİMPA LTD. ŞTİ.</h3>
-            <p>Kalite ve hijyenin buluştuğu nokta.</p>
-            <p>📩 iletisim@timpaltd.com.tr | 📞 +90 212 XXX XX XX</p>
-        </div>
-    </footer>
 
+ <footer id="iletisim">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>TİMPA LTD. ŞTİ.</h3>
+            <p>Hijyenin ve Kalitenin güvenilir adresi.</p>
+            <br>
+            <p>📍 <strong>Adres:</strong> Ali Aygün İş Merkezi, Güzelyalı, Ener Sk. 81/A, 34903 Pendik/İstanbul</p>
+            <p>📞 <strong>Telefon:</strong> +90 216 493 81 49 </p>
+            <p>📩 <strong>E-posta:</strong> info@timpaltd.com.tr</p>
+        </div>
+        
+        <div class="footer-right">
+            <h3>Fabrika Konumu</h3>
+            <div class="map-container">
+<iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0; border-radius: 10px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 TİMPA LTD. Tüm hakları saklıdır.</p>
+    </div>
+</footer>
+<a href="https://wa.me/905323037309" class="whatsapp-btn" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp İletişim">
+    </a>
+    <script>
+    const menu = document.querySelector('#mobile-menu');
+    const menuLinks = document.querySelector('.nav-links');
+
+    menu.addEventListener('click', function() {
+        menuLinks.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
