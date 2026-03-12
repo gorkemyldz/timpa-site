@@ -24,6 +24,11 @@
             <li><a href="urunler.html" style="color:#00a8cc;">Ürünlerimiz</a></li>
             <li><a href="hakkimizda.html">Hakkımızda</a></li>
             <li><a href="index.html#iletisim" class="btn-nav">Teklif Al</a></li>
+            <li>
+                <a href="urunler-en.html" class="lang-switch">
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-img"> EN
+                </a>
+            </li>
         </ul>
     </nav>
 
@@ -38,7 +43,7 @@
                 <div class="product-img-container"><img src="havlu.jpg" alt="Tek Kullanımlık Havlu"></div>
                 <div class="product-info">
                     <h3>Tek Kullanımlık Havlu</h3>
-                    <p>Kuaför ve güzellik merkezleri için özel üretilmiştir. Ekstra emici dokusu sayesinde sıvıyı anında hapseder. %100 steril ortamda el değmeden paketlenmiştir.</p>
+                    <p>Kuaför ve güzellik merkezleri için özel üretilmiştir. Ekstra emici dokusu sayesinde sıvıyı anında hapseder.</p>
                 </div>
             </div>
 
@@ -46,9 +51,58 @@
                 <div class="product-img-container"><img src="boyun-bandi.jpg" alt="Boyun Bandı"></div>
                 <div class="product-info">
                     <h3>Boyun Bandı</h3>
-                    <p>Berberler ve kuaförler için esnek yapılı boyun kağıdı. Cilde nefes aldırır, terlemeyi önler ve kesim esnasında tam hijyen sağlar.</p>
+                    <p>Berberler ve kuaförler için esnek yapılı boyun kağıdı. Cilde nefes aldırır ve tam hijyen sağlar.</p>
                 </div>
             </div>
 
             <div class="product-card">
-                <div class="product-img-container"><img src="sedye-ortusu.jpg"
+                <div class="product-img-container"><img src="sedye-ortusu.jpg" alt="Sedye Örtüsü"></div>
+                <div class="product-info">
+                    <h3>Sedye Örtüsü</h3>
+                    <p>Medikal standartlarda, alt yüzeyi sıvı geçirmez ve üst yüzeyi yumuşak dokulu örtü.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container"><img src="peskir.jpg" alt="Peşkir"></div>
+                <div class="product-info">
+                    <h3>Peşkir</h3>
+                    <p>Geleneksel doku ve modern hijyen bir arada. Restoran ve oteller için lüks kurulanma çözümü.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-container"><img src="manikur-havlusu.jpg" alt="Manikür Havlusu"></div>
+                <div class="product-info">
+                    <h3>Manikür Havlusu</h3>
+                    <p>Güzellik salonları için tüy bırakmayan, %100 hijyenik ve pratik manikür havlusu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>TİMPA LTD. ŞTİ.</h3>
+                <p>📍 Ali Aygün İş Merkezi, Güzelyalı, Ener Sk. 81/A, Pendik/İstanbul</p>
+                <p>📞 +90 216 493 81 49</p>
+            </div>
+            <div class="footer-right">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TİMPA LTD. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+        menu.addEventListener('click', () => menuLinks.classList.toggle('active'));
+    </script>
+</body>
+</html>
