@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TİMPA | Disposable Hygienic Products</title>
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index-en.html" class="logo-link">
+            <img src="logo.jpg" alt="Timpa Logo" class="site-logo">
+        </a>   
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+       <ul class="nav-links">
+    <li><a href="index-en.html">Home</a></li>
+    <li><a href="urunler-en.html">Products</a></li>
+    <li><a href="hakkimizda-en.html">About Us</a></li>
+    <li><a href="#iletisim" class="btn-nav">Get a Quote</a></li>
+   <li>
+    <a href="index.html" class="lang-switch">
+       <img src="https://flagcdn.com/w40/tr.png" alt="Turkish" class="lang-img"> TR
+    </a>
+</li>
+</ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">PROFESSIONAL PRODUCTION</span>
+            <h1>Disposable <br>Hygiene Solutions</h1>
+            <p>High-absorbent, sterile, and quality textile products for hotels, salons, and health centers.</p>
+            <div class="hero-btns">
+                <a href="urunler-en.html" class="btn primary">Explore Products</a>
+                <a href="hakkimizda-en.html" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats">
+        <div class="stat-item"><h3>10M+</h3><p>Monthly Production</p></div>
+        <div class="stat-item"><h3>15+</h3><p>Export Countries</p></div>
+        <div class="stat-item"><h3>100%</h3><p>Local Capital</p></div>
+    </section>
+
+    <div class="quality-badges">
+        <div class="badge-item"><span>✔</span> ISO 9001 Certified</div>
+        <div class="badge-item"><span>✔</span> 100% Sterile Production</div>
+        <div class="badge-item"><span>✔</span> Fast Shipping</div>
+        <div class="badge-item"><span>✔</span> High Absorbency</div>
+    </div>
+
+    <section class="why-us">
+        <div class="section-header">
+            <h2>Why Choose Us?</h2>
+            <p>We do not compromise on quality from production to delivery.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon">🛡️</div>
+                <h3>100% Hygienic</h3>
+                <p>Produced in fully sterile environments without human touch.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Delivery</h3>
+                <p>Thanks to our strong stock, we ship your orders without delay.</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-icon">💎</div>
+                <h3>Manufacturer to Consumer</h3>
+                <p>Direct from factory prices without any intermediaries.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>TİMPA LTD. STI.</h3>
+                <p>The reliable address for hygiene and quality.</p>
+                <br>
+                <p>📍 <strong>Address:</strong> Ali Aygun Business Center, Pendik/Istanbul/Turkey</p>
+                <p>📞 <strong>Phone:</strong> +90 216 493 81 49 </p>
+                <p>📩 <strong>E-mail:</strong> info@timpaltd.com.tr</p>
+            </div>
+            <div class="footer-right">
+                <h3>Factory Location</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 TİMPA LTD. All rights reserved.</p></div>
+    </footer>
+
+    <script>
+        const menu = document.querySelector('#mobile-menu');
+        const menuLinks = document.querySelector('.nav-links');
+        menu.addEventListener('click', () => menuLinks.classList.toggle('active'));
+    </script>
+</body>
+</html>
