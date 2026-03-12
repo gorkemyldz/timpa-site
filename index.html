@@ -8,20 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
     <nav class="navbar">
-        <a href="#" class="logo-link">
+        <a href="index.html" class="logo-link">
             <img src="logo.jpg" alt="Timpa Logo" class="site-logo">
-        </a>   
-        
+        </a>        
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
-        
+        </div>     
      <ul class="nav-links">
     <li><a href="index.html">Anasayfa</a></li>
     <li><a href="urunler.html">Ürünlerimiz</a></li>
@@ -30,11 +26,7 @@
     <li>
         <a href="index-en.html" class="lang-switch">
             <img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="English" class="lang-img"> EN
-        </a>
-    </li>
-</ul>
-    </nav>
-
+        </a>   </li></ul>   </nav>
     <header class="hero">
         <div class="hero-content">
             <span class="badge">PROFESYONEL ÜRETİM</span>
@@ -46,7 +38,6 @@
             </div>
         </div>
     </header>
-
     <section class="stats">
         <div class="stat-item">
             <h3>10M+</h3>
@@ -61,20 +52,17 @@
             <p>Yerli Sermaye</p>
         </div>
     </section>
-
     <div class="quality-badges">
         <div class="badge-item"><span>✔</span> ISO 9001 Sertifikalı</div>
         <div class="badge-item"><span>✔</span> %100 Steril Üretim</div>
         <div class="badge-item"><span>✔</span> Hızlı Sevkiyat</div>
         <div class="badge-item"><span>✔</span> Yüksek Emici Dokunuş</div>
     </div>
-
     <section id="urunler" class="products">
         <div class="section-header">
             <h2>Ürün Gruplarımız</h2>
             <p>Sektörünüze özel, pratik ve ekonomik çözümler</p>
-        </div>
-        
+        </div>     
         <div class="grid-container">
             <div class="product-card">
                 <div class="product-img-container">
@@ -85,7 +73,6 @@
                     <p>Kuaför ve güzellik merkezleri için ekstra emici doku.</p>
                 </div>
             </div>
-
             <div class="product-card">
                 <div class="product-img-container">
                     <img src="boyun-bandi.jpg" alt="Boyun Bandı">
@@ -95,7 +82,6 @@
                     <p>Esnek yapısı ile tam hijyen sağlayan berber boyun kağıdı.</p>
                 </div>
             </div>
-
             <div class="product-card">
                 <div class="product-img-container">
                     <img src="sedye-ortusu.jpg" alt="Sedye Örtüsü">
@@ -107,13 +93,11 @@
             </div>
         </div>
     </section>
-
     <section class="why-us">
         <div class="section-header">
             <h2>Neden Bizi Seçmelisiniz?</h2>
             <p>Üretimden teslimata kadar kaliteden ödün vermiyoruz.</p>
-        </div>
-        
+        </div>     
         <div class="features-grid">
             <div class="feature-box">
                 <div class="feature-icon">🛡️</div>
@@ -132,7 +116,6 @@
             </div>
         </div>
     </section>
-
     <footer id="iletisim">
         <div class="footer-container">
             <div class="footer-left">
@@ -142,8 +125,7 @@
                 <p>📍 <strong>Adres:</strong> Ali Aygün İş Merkezi, Güzelyalı, Ener Sk. 81/A, 34903 Pendik/İstanbul</p>
                 <p>📞 <strong>Telefon:</strong> +90 216 493 81 49 </p>
                 <p>📩 <strong>E-posta:</strong> info@timpaltd.com.tr</p>
-            </div>
-            
+            </div>          
             <div class="footer-right">
                 <h3>Fabrika Konumu</h3>
                 <div class="map-container">
@@ -155,15 +137,9 @@
     allowfullscreen="" 
     loading="lazy" 
     referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-                </div>
-            </div>
-        </div>
+</iframe> </div></div> </div>
         <div class="footer-bottom">
-            <p>© 2026 TİMPA LTD. Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
-
+            <p>© 2026 TİMPA LTD. Tüm hakları saklıdır.</p>        </div>    </footer>
     <div id="teklifModal" class="modal">
         <div class="modal-content">
             <span class="close">×</span>
@@ -180,28 +156,26 @@
     </select>
     <textarea name="mesaj" placeholder="Mesajınız..."></textarea>
     <button type="submit" class="btn primary">Teklif İste</button>
-</form>
-        </div>
-    </div>
-
+</form>        </div>    </div>
     <a href="https://wa.me/905323037309" class="whatsapp-btn" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp İletişim">
-    </a>
-
-    <script>
-        // Mobil Menü Mantığı
+    </a><script>  
+    document.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector('#mobile-menu');
         const menuLinks = document.querySelector('.nav-links');
-        menu.addEventListener('click', () => menuLinks.classList.toggle('active'));
-
-        // Modal (Açılır Pencere) Mantığı
-        const modal = document.getElementById("teklifModal");
-        const btn = document.getElementById("teklifBtn");
-        const span = document.querySelector(".close");
-
+        if (menu) {
+            menu.addEventListener('click', () => {
+                menuLinks.classList.toggle('active'); 
+                menu.classList.toggle('is-active');   
+            });}});
+    const modal = document.getElementById("teklifModal");
+    const btn = document.getElementById("teklifBtn") || document.getElementById("teklifBtnEN");
+    const span = document.querySelector(".close");
+    if (btn && modal) {
         btn.onclick = () => modal.style.display = "block";
         span.onclick = () => modal.style.display = "none";
         window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }
-    </script>
+    }
+</script>
 </body>
 </html>

@@ -7,9 +7,7 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-
-<body>
+</head><body>
     <nav class="navbar">
         <a href="index.html" class="logo-link">
             <img src="logo.jpg" alt="Timpa Logo" class="site-logo">
@@ -26,61 +24,39 @@
             <li><a href="index.html#iletisim" class="btn-nav">Teklif Al</a></li>
             <li>
                 <a href="urunler-en.html" class="lang-switch">
-                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-img"> EN
-                </a>
-            </li>
-        </ul>
-    </nav>
-
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-img"> EN    </a>  </li> </ul> </nav>
     <div style="background: #030d29; color: white; text-align: center; padding: 100px 8% 60px;">
         <h1 style="font-size: 3rem; margin-bottom: 15px;">Tüm Ürünlerimiz</h1>
         <p style="opacity: 0.8; font-size: 1.1rem;">Sektörünüze özel, yüksek standartlarda üretilmiş tek kullanımlık hijyen çözümleri.</p>
     </div>
-
     <section class="products" style="padding-top: 60px;">
         <div class="grid-container">
             <div class="product-card">
                 <div class="product-img-container"><img src="havlu.jpg" alt="Tek Kullanımlık Havlu"></div>
                 <div class="product-info">
                     <h3>Tek Kullanımlık Havlu</h3>
-                    <p>Kuaför ve güzellik merkezleri için özel üretilmiştir. Ekstra emici dokusu sayesinde sıvıyı anında hapseder.</p>
-                </div>
-            </div>
-
+                    <p>Kuaför ve güzellik merkezleri için özel üretilmiştir. Ekstra emici dokusu sayesinde sıvıyı anında hapseder.</p>    </div>    </div>
             <div class="product-card">
                 <div class="product-img-container"><img src="boyun-bandi.jpg" alt="Boyun Bandı"></div>
                 <div class="product-info">
                     <h3>Boyun Bandı</h3>
-                    <p>Berberler ve kuaförler için esnek yapılı boyun kağıdı. Cilde nefes aldırır ve tam hijyen sağlar.</p>
-                </div>
-            </div>
-
+                    <p>Berberler ve kuaförler için esnek yapılı boyun kağıdı. Cilde nefes aldırır ve tam hijyen sağlar.</p>           </div>         </div>
             <div class="product-card">
                 <div class="product-img-container"><img src="sedye-ortusu.jpg" alt="Sedye Örtüsü"></div>
                 <div class="product-info">
                     <h3>Sedye Örtüsü</h3>
-                    <p>Medikal standartlarda, alt yüzeyi sıvı geçirmez ve üst yüzeyi yumuşak dokulu örtü.</p>
-                </div>
-            </div>
-
+                    <p>Medikal standartlarda, alt yüzeyi sıvı geçirmez ve üst yüzeyi yumuşak dokulu örtü.</p>         </div>      </div>
             <div class="product-card">
                 <div class="product-img-container"><img src="peskir.jpg" alt="Peşkir"></div>
                 <div class="product-info">
                     <h3>Peşkir</h3>
-                    <p>Geleneksel doku ve modern hijyen bir arada. Restoran ve oteller için lüks kurulanma çözümü.</p>
-                </div>
-            </div>
-
+                    <p>Geleneksel doku ve modern hijyen bir arada. Restoran ve oteller için lüks kurulanma çözümü.</p> </div>   </div>
             <div class="product-card">
                 <div class="product-img-container"><img src="manikur-havlusu.jpg" alt="Manikür Havlusu"></div>
                 <div class="product-info">
                     <h3>Manikür Havlusu</h3>
                     <p>Güzellik salonları için tüy bırakmayan, %100 hijyenik ve pratik manikür havlusu.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+                </div>    </div> </div> </section>
     <footer id="iletisim">
         <div class="footer-container">
             <div class="footer-left">
@@ -91,18 +67,27 @@
             <div class="footer-right">
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
+    </div></div></div>
         <div class="footer-bottom">
             <p>© 2026 TİMPA LTD. Tüm hakları saklıdır.</p>
         </div>
-    </footer>
-
-    <script>
+  </footer>
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector('#mobile-menu');
         const menuLinks = document.querySelector('.nav-links');
-        menu.addEventListener('click', () => menuLinks.classList.toggle('active'));
-    </script>
+        if (menu) {
+            menu.addEventListener('click', () => {
+                menuLinks.classList.toggle('active'); 
+                menu.classList.toggle('is-active');    }); } });
+    const modal = document.getElementById("teklifModal");
+    const btn = document.getElementById("teklifBtn") || document.getElementById("teklifBtnEN");
+    const span = document.querySelector(".close");
+
+    if (btn && modal) {
+        btn.onclick = () => modal.style.display = "block";
+        span.onclick = () => modal.style.display = "none";
+        window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; }   }
+</script>
 </body>
 </html>

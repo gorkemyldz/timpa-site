@@ -7,9 +7,7 @@
     <link rel="icon" type="image/jpeg" href="logo.jpg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-</head>
-
-<body>
+</head><body>
     <nav class="navbar">
         <a href="index.html" class="logo-link">
             <img src="logo.jpg" alt="Timpa Logo" class="site-logo">
@@ -24,17 +22,12 @@
             <li><a href="index.html#iletisim" class="btn-nav">Teklif Al</a></li>
             <li>
                 <a href="hakkimizda-en.html" class="lang-switch">
-                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-img"> EN
-                </a>
-            </li>
-        </ul>
+                    <img src="https://flagcdn.com/w40/gb.png" alt="English" class="lang-img"> EN  </a>  </li>   </ul>
     </nav>
-
     <div style="background: #030d29; color: white; text-align: center; padding: 120px 8% 80px;">
         <h1 style="font-size: 3rem; margin-bottom: 15px;">Biz Kimiz?</h1>
         <p style="opacity: 0.8; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Hijyen ve kaliteden ödün vermeyen üretim anlayışımızla, tek kullanımlık tekstil sektöründe dünyaya açılıyoruz.</p>
     </div>
-
     <section style="padding: 80px 8%; display: flex; flex-wrap: wrap; gap: 50px; align-items: center;">
         <div style="flex: 1; min-width: 300px;">
             <h2 style="color: #030d29; margin-bottom: 25px; font-size: 2.2rem;">TİMPA LTD. ŞTİ.</h2>
@@ -49,7 +42,6 @@
             <img src="logo.jpg" alt="Üretim" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
         </div>
     </section>
-
     <section style="padding: 60px 8%; background: #f9fcfe; display: flex; flex-wrap: wrap; gap: 30px;">
         <div style="flex: 1; min-width: 250px; background: white; padding: 40px; border-radius: 15px; border-bottom: 5px solid #00a8cc;">
             <h3 style="margin-bottom: 15px;">Misyonumuz</h3>
@@ -60,24 +52,31 @@
             <p style="color: #666;">Yenilikçi üretim teknolojilerimizle, tek kullanımlık hijyen ürünlerinde Avrupa ve Orta Doğu pazarının lider üreticisi konumuna gelmek.</p>
         </div>
     </section>
-
     <footer id="iletisim">
         <div class="footer-container">
             <div class="footer-left">
                 <h3>TİMPA LTD. ŞTİ.</h3>
                 <p>📍 Ali Aygün İş Merkezi, Pendik/İstanbul</p>
-                <p>📞 +90 216 493 81 49</p>
-            </div>
+                <p>📞 +90 216 493 81 49</p>    </div>
             <div class="footer-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" width="100%" height="200" style="border:0; border-radius: 10px;"></iframe>
-            </div>
-        </div>
-    </footer>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.543161479813!2d29.277577076555!3d40.86401397137172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadcc2725084cd%3A0xe5679f366acc2a7f!2sAli%20Ayg%C3%BCn%20%C4%B0%C5%9F%20Merkezi!5e0!3m2!1str!2str!4v1710000000000!5m2!1str!2str" width="100%" height="200" style="border:0; border-radius: 10px;"></iframe>   </div>  </div> </footer>
     <script>
+    // Sayfa yüklendiğinde çalışması için garantiye alıyoruz
+    document.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector('#mobile-menu');
         const menuLinks = document.querySelector('.nav-links');
-        menu.addEventListener('click', () => menuLinks.classList.toggle('active'));
-    </script>
+        // Eğer sayfada menü butonu varsa çalıştır
+        if (menu) {
+            menu.addEventListener('click', () => {
+                menuLinks.classList.toggle('active'); 
+                menu.classList.toggle('is-active');     }); } });
+    const modal = document.getElementById("teklifModal");
+    const btn = document.getElementById("teklifBtn") || document.getElementById("teklifBtnEN");
+    const span = document.querySelector(".close");
+    if (btn && modal) {
+        btn.onclick = () => modal.style.display = "block";
+        span.onclick = () => modal.style.display = "none";
+        window.onclick = (e) => { if (e.target == modal) modal.style.display = "none"; } }
+</script>
 </body>
 </html>
